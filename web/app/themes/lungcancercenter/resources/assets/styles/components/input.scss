@@ -1,0 +1,19 @@
+.input {
+  @apply p-3 w-full leading-tight appearance-none bg-white border border-grey rounded-none shadow-inner text-grey-dark;
+
+  &:focus {
+    @apply outline-none shadow-outline;
+  }
+}
+
+.label {
+  @apply block uppercase tracking-wide text-sm font-bold mb-2;
+}
+
+.legend {
+  @apply w-full mb-4 mx-3 pb-2 text-xl font-medium border-blue-dark border-b-2 text-blue-dark;
+}
+
+.fieldset {
+  @apply flex flex-wrap -mx-3 mb-4;
+}

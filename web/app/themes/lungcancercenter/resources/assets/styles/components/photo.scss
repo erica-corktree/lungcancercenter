@@ -1,0 +1,35 @@
+.photo {
+  @apply relative;
+  display:block;
+
+  & > img {
+    @apply  z-10 w-full h-full object-cover;
+  }
+}
+
+.photo--hero {
+  @apply absolute inset-y-0 right-0 z-20 w-full;
+
+  @screen md {
+    width: 100%;
+  }
+}
+
+.photo--page-header {
+  @apply absolute inset-0 z-20 h-full w-full bg-blue-light;
+
+
+  & img {
+    @apply opacity-25;
+  }
+
+  .page-child & {
+    @apply bg-teal-dark;
+  }
+}
+
+.photo--widget {
+  .widget_content & {
+    @apply block h-32 mb-4 border;
+  }
+}

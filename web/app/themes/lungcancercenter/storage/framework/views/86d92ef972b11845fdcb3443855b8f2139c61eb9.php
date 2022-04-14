@@ -1,0 +1,2 @@
+<div class="col col--span-<?php echo e($span); ?>"><?php echo $content; ?></div>
+<?php /**PATH /www/lungcancercenter_374/public/current/web/app/themes/lungcancercenter/resources/views/shortcodes/col.blade.php ENDPATH**/ ?>

@@ -1,0 +1,57 @@
+.footer {
+  @apply py-8 text-white bg-blue-darkest;
+
+  @screen md {
+    @apply py-12;
+  }
+}
+.Footer__social-links {
+  float:left;
+  display:inline-block;
+}
+.Footer__social {
+  margin: 5px;
+  float: left;
+}
+.Footer__socal-icons {
+  margin-top:20px!important;
+}
+.email_opt {
+  float:none;
+  padding-bottom:40px;
+  color: var(--white);
+  width:100%;
+  margin-top:30px;
+
+  & > h4 {
+    font-weight: var(--normal);
+    color: #fefefe;
+    font-size:18px;
+    text-align:center;
+    padding-bottom:10px;
+  }
+
+  @media (--breakpoint-md) {
+    float:right;
+    margin-bottom:20px;
+  }
+}
+.email_clear {
+  clear:both;
+}
+
+.form_container {
+  margin:0 auto;
+  text-align:center;
+}
+
+#fieldEmail {
+  width:60%;
+  padding:10px;
+  color:#000000;
+}
+button.email_opt_btn {
+  padding:10px 20px 10px 20px;
+  background-color: #3bb294;
+  margin-left:-10px;
+}

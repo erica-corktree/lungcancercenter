@@ -1,0 +1,134 @@
+.editorcontent {
+  @apply text-black;
+
+  & > :last-child {
+    @apply mb-0;
+  }
+
+  & > h1,
+  & > h2 {
+    @apply mb-6 font-medium text-3xl text-blue-dark;
+
+    &::after {
+      @apply block mt-4 text-3xl bg-teal;
+      content: '';
+      height: 2px;
+      width: 100px;
+    }
+  }
+
+  & > h3 {
+    @apply mb-6 font-medium text-2xl text-teal;
+  }
+
+  & > h4 {
+    @apply mb-6 font-semibold text-xl text-blue-dark;
+  }
+
+  & > h5 {
+    @apply mb-6 font-medium text-lg text-teal;
+  }
+
+  & > h6 {
+    @apply mb-6 font-medium text-base text-blue-dark;
+  }
+
+  & > a:not(.button) {
+    @apply font-medium underline break-words text-teal;
+  }
+
+  & > p {
+    @apply mb-4 break-words;
+
+    & > a:not(.button) {
+      @apply font-medium underline break-words text-teal;
+    }
+  }
+
+  & > ul,
+  & > ol {
+    @apply my-6 pl-4 list-disc;
+
+    & > li {
+      @apply mb-2 break-words;
+
+      &:last-child {
+        @apply mb-0;
+      }
+
+      & > a:not(.button) {
+        @apply font-medium underline break-words text-teal;
+      }
+    }
+
+    & > a:not(.button) {
+      @apply font-medium underline break-words text-teal;
+    }
+
+    & > p {
+      @apply mb-4 break-words;
+
+      & > a:not(.button) {
+        @apply font-medium underline break-words text-teal;
+      }
+    }
+  }
+
+  & > ol {
+    @apply list-decimal;
+  }
+
+  & > ul.unstyled,
+  & > ol.unstyled {
+    @apply pl-0 list-none;
+  }
+
+  & > table {
+    @apply my-8 w-full;
+  }
+
+  & > table th,
+  & > table td {
+    @apply px-4 py-2 border;
+  }
+}
+
+.bg-blue-light .editorcontent,
+.bg-blue-dark .editorcontent {
+  @apply text-white;
+
+  & > h1,
+  & > h2 {
+    @apply text-white;
+
+    &::after {
+      @apply bg-yellow;
+    }
+  }
+
+  & > h3 {
+    @apply text-yellow;
+  }
+
+  & > h4 {
+    @apply text-white;
+  }
+
+  & > h5 {
+    @apply text-yellow;
+  }
+
+  & > h6 {
+    @apply text-white;
+  }
+}
+
+.editorcontent.text-center {
+  & > h1::after {
+    @apply mx-auto;
+  }
+
+  & > h2::after {
+    @apply mx-auto;
+  }
+}

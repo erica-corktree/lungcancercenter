@@ -1,0 +1,21 @@
+@tailwind base;
+
+/** Config */
+@import "config/variables";
+@import "config/external";
+
+@tailwind components;
+
+/** Common */
+@import "common/fonts";
+@import "common/global";
+@import "common/wordpress";
+
+/** Components */
+@import "components";
+
+@tailwind utilities;
+@import "utils/fl-h";
+@import "utils/fl-text";
+
+@import 'components/_BottomCTA.scss';

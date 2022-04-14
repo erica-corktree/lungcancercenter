@@ -1,0 +1,16 @@
+.page-footer {
+  position: relative;
+  background-color: #fff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #fff;
+    background-image: linear-gradient(#f7f7f7 0%, #fff 50%);
+    border-top-width: 1px;
+  }
+}

@@ -1,0 +1,2 @@
+<a class="button<?php echo e($style); ?>" href="<?php echo e($href); ?>"><?php echo $content; ?></a>
+<?php /**PATH /www/lungcancercenter_374/public/current/web/app/themes/lungcancercenter/resources/views/shortcodes/btn.blade.php ENDPATH**/ ?>

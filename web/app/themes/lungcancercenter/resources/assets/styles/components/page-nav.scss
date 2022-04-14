@@ -1,0 +1,35 @@
+.page-nav {
+  @apply m-0 p-0 list-none;
+}
+
+.page-nav__item {
+  @apply flex flex-wrap items-center justify-between mb-2;
+
+  &:last-child {
+    @apply mb-0;
+  }
+}
+
+.page-nav__link {
+  @apply block text-blue-dark;
+
+  .page-nav__item--active > & {
+    @apply font-bold;
+  }
+}
+
+.page-nav__expand {
+  @apply leading-none;
+
+  &[aria-expanded="true"] > svg {
+    transform: rotate(180deg);
+  }
+}
+
+.page-nav__sub-menu {
+  @apply hidden pt-4 pr-0 pb-4 pl-4 w-full;
+
+  &[aria-hidden="false"] {
+    @apply block;
+  }
+}

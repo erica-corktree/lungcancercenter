@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none" height="0" width="0">
+  <clipPath id="wave" clipPathUnits="objectBoundingBox">
+    <path d="M1,0 H0 v0.724 c0,0,0.056,0.125,0.151,0.108 c0.07,-0.012,0.231,-0.143,0.328,-0.15 c0.209,-0.016,0.383,0.446,0.521,0.285 V0" />
+  </clipPath>
+</svg>

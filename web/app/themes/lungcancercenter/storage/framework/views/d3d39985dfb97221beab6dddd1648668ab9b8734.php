@@ -1,0 +1,2 @@
+<a class="text-3xl font-heading font-medium text-yellow stretched-link" href="<?php echo e($button['url']); ?>"><?php echo e($button['title']); ?></a>
+<?php /**PATH /www/lungcancercenter_374/public/current/web/app/themes/lungcancercenter/resources/views/widgets/cta.blade.php ENDPATH**/ ?>

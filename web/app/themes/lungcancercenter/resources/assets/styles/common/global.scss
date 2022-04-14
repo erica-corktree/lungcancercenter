@@ -1,0 +1,59 @@
+/**
+ * Global
+ */
+
+:--all-level-headings {
+  @apply font-heading;
+}
+
+[id="app"] {
+  @apply flex flex-col min-h-screen;
+}
+
+a {
+  color: map-get($theme-colors, 'primary');
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+
+  &:focus {
+    clip: auto;
+    height: auto;
+    overflow: visible;
+    width: auto;
+  }
+}
+
+.stretched-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: auto;
+}
+
+/**
+ * Block editor color palette utilities
+ * @see https://git.io/JeyD6
+ */
+
+ @each $color-name, $color-value in $theme-colors {
+  .has-#{$color-name}-color {
+    color: $color-value;
+  }
+
+  .has-#{$color-name}-background-color {
+    background-color: $color-value;
+  }
+}

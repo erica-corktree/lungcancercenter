@@ -1,0 +1,125 @@
+.navigation {
+  @apply absolute top-0 left-0 hidden bg-blue;
+  height: 100vh;
+  width: 100vw;
+
+  @media (--breakpoint-md) {
+    @apply static block h-auto w-auto;
+  }
+
+  &.js-active {
+    @apply block;
+    z-index: 9999;
+  }
+}
+
+.navigation__container {
+  @apply relative flex flex-col items-center justify-between;
+
+  @media (--breakpoint-md) {
+    @apply flex-row;
+  }
+}
+
+.navigation__menu {
+  @apply flex pt-8 w-full flex-col order-2;
+
+  @media (--breakpoint-md) {
+    @apply h-20 pt-0 w-auto flex-row items-stretch order-1;
+  }
+}
+
+.navigation__menu-item {
+  @apply flex flex-wrap items-stretch border-b border-white text-white;
+
+  @media (--breakpoint-md) {
+    @apply border-0;
+  }
+
+  &:hover {
+    @apply bg-blue-light;
+
+    & .navigation__submenu {
+      @media (--breakpoint-md) {
+        @apply block;
+      }
+    }
+  }
+
+  &:first-child {
+    @apply border-t;
+
+    @media (--breakpoint-md) {
+      @apply border-0;
+    }
+  }
+
+  &.js-active .navigation__submenu {
+    @media (--breakpoint-xs-sm) {
+      @apply block;
+    }
+  }
+}
+
+.navigation__menu-link {
+  @apply relative flex py-4 w-full flex-1 items-center font-heading text-white;
+
+  @media (--breakpoint-md) {
+    @apply px-6 py-0;
+  }
+
+  &::after {
+    @media (--breakpoint-md) {
+      @apply absolute top-1/2 right-0 bottom-auto block w-full bg-white;
+      content: '';
+      height: 28px;
+      width: 1px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .navigation__menu-item:first-child &::before {
+    @media (--breakpoint-md) {
+      @apply absolute top-1/2 left-0 block w-full bg-white;
+      content: '';
+      height: 28px;
+      width: 1px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.navigation__toggle-button {
+  @apply block py-2 px-4 border-l border-white;
+
+  @media (--breakpoint-md) {
+    @apply hidden;
+  }
+}
+
+.navigation__submenu {
+  @apply static hidden p-4 w-full bg-blue-dark border-t border-white;
+
+  @media (--breakpoint-md) {
+    @apply absolute w-auto bg-grey-lighter border-0 shadow;
+    top: 100%;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+.navigation__submenu-item {
+  @apply mb-2;
+
+  &:last-child {
+    @apply mb-0;
+  }
+}
+
+.navigation__submenu-link {
+  @apply font-medium text-white;
+
+  @media (--breakpoint-md) {
+    @apply text-blue-dark;
+  }
+}

@@ -1,0 +1,15 @@
+.alert {
+  @apply mb-8 p-4 bg-grey-light border-l-4 border-grey text-grey-darker;
+}
+
+.alert--success {
+  @apply bg-green-lighter border-green text-green-darker;
+}
+
+.alert--warning {
+  @apply bg-orange-lighter border-orange text-orange-darker;
+}
+
+.alert--danger {
+  @apply bg-red-lighter border-red text-red-darker;
+}

@@ -1,0 +1,21 @@
+.section__title {
+  &::after {
+    @apply block mt-4 bg-teal;
+    content: '';
+    height: 2px;
+    width: 100px;
+  }
+}
+
+.section--cta-with-photo {
+  background-image: linear-gradient(#317991, #5899b0);
+}
+
+.section--cta-footer {
+  @apply text-white py-12;
+  background-image: linear-gradient(#317991, #5899b0);
+
+  .section__title {
+    @apply text-white mb-12 font-medium leading-none text-3xl;
+  }
+}

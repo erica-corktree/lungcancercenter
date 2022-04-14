@@ -1,0 +1,19 @@
+.row {
+  @apply my-8 -mx-4 flex flex-wrap justify-center;
+
+  @media (--breakpoint-md) {
+    @apply my-12;
+  }
+}
+
+.row--col-count-3 > div {
+  @apply w-full;
+
+  @media (--breakpoint-md) {
+    @apply w-1/2;
+  }
+
+  @media (--breakpoint-lg) {
+    @apply w-1/3;
+  }
+}

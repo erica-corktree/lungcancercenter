@@ -1,0 +1,7 @@
+.col {
+  @apply px-4 flex flex-col text-center;
+
+  & img {
+    @apply w-32 h-auto mx-auto;
+  }
+}
